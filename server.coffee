@@ -19,5 +19,6 @@
 
 new Ignitor(require('@adonisjs/fold'))
   .appRoot(__dirname)
+  .appFile('start/app') # internal default is 'app.js'
   .fireHttpServer()
   .catch(console.error)
