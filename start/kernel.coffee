@@ -1,8 +1,6 @@
-'use strict'
+Server = use('Server')
 
-const Server = use('Server')
-
-/*
+###
 |--------------------------------------------------------------------------
 | Global Middleware
 |--------------------------------------------------------------------------
@@ -10,10 +8,10 @@ const Server = use('Server')
 | Global middleware are executed on each http request only when the routes
 | match.
 |
-*/
-const globalMiddleware = []
+###
+globalMiddleware = []
 
-/*
+###
 |--------------------------------------------------------------------------
 | Named Middleware
 |--------------------------------------------------------------------------
@@ -29,8 +27,8 @@ const globalMiddleware = []
 | // use
 | Route.get().middleware('auth')
 |
-*/
-const namedMiddleware = {}
+###
+namedMiddleware = {}
 
 Server
   .registerGlobal(globalMiddleware)

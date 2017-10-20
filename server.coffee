@@ -1,6 +1,4 @@
-'use strict'
-
-/*
+###
 |--------------------------------------------------------------------------
 | Http server
 |--------------------------------------------------------------------------
@@ -15,9 +13,9 @@
 | """ Preloading files """
 |     Also you can preload files by calling `preLoad('path/to/file')` method.
 |     Make sure to pass relative path from the project root.
-*/
+###
 
-const { Ignitor } = require('@adonisjs/ignitor')
+{ Ignitor } = require('@adonisjs/ignitor')
 
 new Ignitor(require('@adonisjs/fold'))
   .appRoot(__dirname)
