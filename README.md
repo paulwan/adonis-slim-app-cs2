@@ -7,3 +7,11 @@ The Adonis slim app is the tinest boilerplate to create Adonisjs applications wi
 This project structure can scale as you go, simply execute the `ace` commands to create **Controllers**, **Models**, etc for you. 
 
 Also make sure to read the [guides](http://dev.adonisjs.com/docs/4.0/installation)
+
+## Testing CoffeeScript 2
+
+```
+npm install
+cp .env.example .env
+coffee server.coffee
+```

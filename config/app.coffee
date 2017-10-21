@@ -1,9 +1,7 @@
-'use strict'
-
-const Env = use('Env')
+Env = use('Env')
 
 module.exports = {
-  /*
+  ###
   |--------------------------------------------------------------------------
   | App Key
   |--------------------------------------------------------------------------
@@ -11,11 +9,11 @@ module.exports = {
   | App key is a randomly generated 16 or 32 characters long string required
   | to encrypted cookies, sessions and other sensitive data.
   |
-  */
+  ###
   appKey: Env.get('APP_KEY'),
 
   http: {
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Allow Method Spoofing
     |--------------------------------------------------------------------------
@@ -25,10 +23,10 @@ module.exports = {
     | treat as a POST or PUT request. If you want this feature, set the
     | below value to true.
     |
-    */
+    ###
     allowMethodSpoofing: true,
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Trust Proxy
     |--------------------------------------------------------------------------
@@ -39,10 +37,10 @@ module.exports = {
     | to true or false Adonis supports handful or ways to allow proxy
     | values. Read documentation for that.
     |
-    */
+    ###
     trustProxy: false,
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Subdomains
     |--------------------------------------------------------------------------
@@ -53,10 +51,10 @@ module.exports = {
     | cheatsheet.adonisjs.com      - offset - 2
     | virk.cheatsheet.adonisjs.com - offset - 3
     |
-    */
+    ###
     subdomainOffset: 2,
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | JSONP Callback
     |--------------------------------------------------------------------------
@@ -64,11 +62,11 @@ module.exports = {
     | Default jsonp callback to be used when callback query string is missing
     | in request url.
     |
-    */
+    ###
     jsonpCallback: 'callback',
 
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Etag
     |--------------------------------------------------------------------------
@@ -78,12 +76,12 @@ module.exports = {
     |
     | response.send('Hello', { ignoreEtag: true })
     |
-    */
+    ###
     etag: true
   },
 
   views: {
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Cache Views
     |--------------------------------------------------------------------------
@@ -91,12 +89,12 @@ module.exports = {
     | Define whether or not to cache the compiled view. Set it to true in
     | production to optimize view loading time.
     |
-    */
+    ###
     cache: Env.get('CACHE_VIEWS', true)
   },
 
   static: {
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Dot Files
     |--------------------------------------------------------------------------
@@ -108,20 +106,20 @@ module.exports = {
     | Can be one of the following
     | ignore, deny, allow
     |
-    */
+    ###
     dotfiles: 'ignore',
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | ETag
     |--------------------------------------------------------------------------
     |
     | Enable or disable etag generation
     |
-    */
+    ###
     etag: true,
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Extensions
     |--------------------------------------------------------------------------
@@ -130,12 +128,12 @@ module.exports = {
     | extensions will be added to the file name and search for. The first
     | that exists will be served. Example: ['html', 'htm'].
     |
-    */
+    ###
     extensions: false
   },
 
   locales: {
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Driver
     |--------------------------------------------------------------------------
@@ -145,10 +143,10 @@ module.exports = {
     |
     | file, database
     |
-    */
+    ###
     driver: 'file',
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Default Locale
     |--------------------------------------------------------------------------
@@ -157,12 +155,12 @@ module.exports = {
     | in runtime or use the official Antl middleware to detect the driver
     | based on HTTP headers/query string.
     |
-    */
+    ###
     locale: 'en'
   },
 
   logger: {
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Transport
     |--------------------------------------------------------------------------
@@ -172,10 +170,10 @@ module.exports = {
     |
     | Available drivers are: `file` and `console`.
     |
-    */
+    ###
     transport: 'console',
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | Console Transport
     |--------------------------------------------------------------------------
@@ -183,14 +181,14 @@ module.exports = {
     | Using `console` driver for logging. This driver writes to `stdout`
     | and `stderr`
     |
-    */
+    ###
     console: {
       driver: 'console',
       name: 'adonis-app',
       level: 'info'
     },
 
-    /*
+    ###
     |--------------------------------------------------------------------------
     | File Transport
     |--------------------------------------------------------------------------
@@ -200,7 +198,7 @@ module.exports = {
     |
     | For a different directory, set an absolute path for the filename.
     |
-    */
+    ###
     file: {
       driver: 'file',
       name: 'adonis-app',
