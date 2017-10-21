@@ -13,10 +13,23 @@ Also make sure to read the [guides](http://dev.adonisjs.com/docs/4.0/installatio
 * NOTE: nodemon is CoffeeScript aware, so just pass it server.coffee!
 * See: https://github.com/remy/nodemon
 
-Changes to /usr/local/lib/node_modules/@adonisjs/cli/src/Commands/Serve/index.js
+1) Changes to /usr/local/lib/node_modules/@adonisjs/cli/src/Commands/Serve/index.js
 
-1) Change 'server.js' to 'server.coffee'
-2) Change 'js json' to 'js json coffee'
+* Change 'server.js' to 'server.coffee'
+* Change 'js json' to 'js json coffee'
+
+2) Changes to {PROJECT_ROOT}/
+
+```
+   syncWithFileSystem () {
+     try {
+       this._config = requireAll({
+         dirname: this._configPath,
+-        filters: /(.*)\.js$/
++        filter: /(.*)\.(?:js|coffee)$/
+       })
+```
+
 3) Override default appFile in {PROJECT_ROOT}/server.coffee as follows:
 
 ```
