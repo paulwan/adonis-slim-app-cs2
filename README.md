@@ -18,7 +18,7 @@ Also make sure to read the [guides](http://dev.adonisjs.com/docs/4.0/installatio
 * Change 'server.js' to 'server.coffee'
 * Change 'js json' to 'js json coffee'
 
-2) Changes to {PROJECT_ROOT}/
+2) Changes to {PROJECT_ROOT}/node_modules/@adonisjs/framework/src/Config/index.js
 
 ```
    syncWithFileSystem () {
