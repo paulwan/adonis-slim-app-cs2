@@ -1,4 +1,4 @@
-# Adonis Slim App
+# Adonis Slim App (using CoffeeScript *.coffee files)
 
 The Adonis slim app is the tinest boilerplate to create Adonisjs applications with minimal footprint and you get all the goodies of Adonis IoC container, autoloading, ace commands etc.
 
