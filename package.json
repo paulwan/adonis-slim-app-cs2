@@ -20,7 +20,7 @@
     "@adonisjs/fold": "^4.0.4",
     "@adonisjs/framework": "^4.0.23",
     "@adonisjs/ignitor": "^1.0.12",
-    "coffeescript": "^2.0.1"
+    "coffeescript": "^2.0.2"
   },
   "autoload": {
     "App": "./app"
